@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Task Manager</title>
+</head>
+
+<body>
+
+    <h1>DevOps Task Manager</h1>
+
+    <input id="taskInput" type="text" placeholder="Enter a task">
+
+    <button id="addTaskButton">Add Task</button>
+
+    <h2>My Tasks</h2>
+
+    <ul id="taskList">
+        <li>Learn Linux</li>
+        <li>Learn Docker</li>
+        <li>Deploy to AWS</li>
+    </ul>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
