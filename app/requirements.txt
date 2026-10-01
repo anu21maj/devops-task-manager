@@ -1,4 +1,8 @@
-Flask
-pytest
+Flask #Backend/API
+pytest #Automated Testing
+mysql-connector-python #Connect Flask to MySQL Database
+python-dotenv #Load Environment Variables
+
+
 
 
