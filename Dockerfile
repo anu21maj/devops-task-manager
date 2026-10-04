@@ -11,13 +11,13 @@ COPY app/requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 #Install the dependencies listed in requirements.txt using pip, without caching the downloaded packages to reduce image size.
 
-COPY app/ .
+COPY app/ ./app/
 #Copy the contents of the app directory from the host machine to the working directory in the container.
 
 EXPOSE 5000
 #Tell Docker that the container will listen on port 5000 at runtime.
 
-CMD ["python", "app.py"]
+CMD ["python", "-m", "app.app"]
 #Set the default command to run when the container starts, which is to execute the app.py file using Python.
 
 
